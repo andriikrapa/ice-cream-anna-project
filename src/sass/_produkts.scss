@@ -1,46 +1,86 @@
 .products-list {
-    list-style: none;
-    padding-left: 0;
-    padding-right: 0;
+    @extend %list;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .products-list-item-bg1 {
-    height: 598px;
-    width: 100%;
     background: #FFB8CA;
+}
+.products-list-item-bg2 {
+    background: #F0D1A5;
+}
+.products-list-item-bg3 {
+    background: #C2E297;
+}
+.products-list-item-bg1,
+.products-list-item-bg2,
+.products-list-item-bg3 {
     border-radius: 24px;
-    @media screen and (min-width: 480px) {
     width: 280px;
     height: 598px;
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 768px) {
     width: 220px;
     height: 589px;
     }
-    @media screen and (min-width: 480px) {
+    @media screen and (min-width: 1200px) {
     width: 335px;
     height: 735px;
     }
-    }
 }
 .products-section-text {
-    font-family: Titan One;
+    font-family: $font-title;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 18px;
-    line-height: 21px;
+    line-height: 1.16;
     text-align: center;
     text-transform: uppercase;
     
-    color: #FFA5BA;
+    color: $subtitle-color;
 }
 .products-section-title {
-    font-family: Titan One;
+    font-family: $font-title;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 34px;
-    line-height: 39px;
+    line-height: 1.14;
     text-align: center;
     letter-spacing: 0.04em;
     text-transform: uppercase;
     
-    color: #D41443;
+    color: $title-color;
 }
+.products-item-name {
+    font-family: $font-title;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 1.13;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: $light-text-color;
+}
+.products-svg {
+    width: 26px;
+    height: 6px;
+    display: flex;
+    align-items: center;
+}
+.products-item-description {
+    font-family: $font-primery;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    color: $light-text-color;
+
+    margin-left: 44px;
+    margin-right: 44px;
+}
+
