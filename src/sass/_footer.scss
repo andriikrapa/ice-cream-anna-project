@@ -1,18 +1,7 @@
-h1,
-h2,
-h3,
-p {
-  margin: 0px;
-}
-.footer {
-  .container {
-    margin: 0 auto;
-    border: 2px solid tomato;
-  }
-}
 .footer {
   .container {
     max-width: 320px;
+    margin: 0 20px;
   }
 }
 .footer-right-social-item {
@@ -96,11 +85,6 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .footer {
-    .container {
-      margin: 0 20px;
-    }
-  }
   .footer-bottom-text {
     max-width: 150px;
   }
