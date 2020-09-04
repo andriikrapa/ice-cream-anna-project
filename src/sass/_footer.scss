@@ -73,9 +73,11 @@
     margin-right: 28px;
   }
 }
+.footer-bottom {
+  display: flex;
+  justify-content: center;
+}
 .footer-bottom-text {
-  margin-left: auto;
-  margin-right: auto;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
