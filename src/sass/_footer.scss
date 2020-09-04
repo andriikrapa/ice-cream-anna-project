@@ -1,4 +1,9 @@
 .footer {
+  h1,
+  h2,
+  p {
+    margin: 0;
+  }
   .container {
     max-width: 320px;
     margin: 0 20px;
