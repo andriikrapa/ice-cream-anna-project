@@ -1,0 +1,283 @@
+<<<<<<< Updated upstream
+=======
+p {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+
+ul {
+  padding: 0;
+}
+
+.howmade-section-links {
+  @extend %link;
+  @extend %list;
+}
+
+.howmade-section {
+  background-color: $hero-bg-color;
+}
+
+.howmade-section .subtitle,
+.howmade-section .title,
+.howmade-section-item {
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.howmade-section-item {
+  display: inline-block;
+  margin-bottom: 13px;
+
+  font-size: 36px;
+  line-height: 1.139;
+  letter-spacing: 0.04em;
+  color: $title-color;
+}
+
+.howmade-section .title {
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
+  color: $title-color;
+}
+
+.howmade-section .discription,
+.howmade-section .discription-b,
+.howmade-section .desc,
+.howmade-section .desc-more {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.583;
+  color: $dark-text-color;
+}
+
+.howmade-section .desc {
+  color: $secondary-text-color;
+}
+
+.howmade-section .discription-b {
+  font-weight: bold;
+}
+
+.howmade-section-btn {
+  width: 176px;
+  height: 44px;
+  background: $light-text-color;
+  border-radius: 22px;
+  border: none;
+
+  margin-bottom: 39px;
+
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  // align-items: center;
+  text-align: center;
+  color: #d41443;
+}
+
+.howmade-section .discription {
+  padding-top: 50px;
+  margin-bottom: 33px;
+}
+
+.bin {
+  margin-bottom: 13px;
+}
+.cow {
+  width: 100%;
+}
+
+.milk {
+  position: relative;
+  width: 100%;
+  height: 130px;
+}
+
+.container {
+  margin: auto;
+}
+
+.howmade-section-btn-svg {
+  width: 4.5px;
+  height: 8px;
+  margin-left: 13px;
+}
+.howmade-section-content {
+  margin: auto;
+}
+.howmade-section .subtitle {
+  color: $subtitle-color;
+}
+
+@media screen and (max-width: 771px) {
+  .howmade-section {
+    padding-top: 125px;
+    padding-bottom: 97px;
+  }
+
+  .discription,
+  .desc,
+  .desc .more {
+    padding-left: 30px;
+  }
+
+  .howmade-section-content {
+    max-width: 771px;
+    margin: auto;
+  }
+  .desc .more {
+    margin-bottom: 17px;
+  }
+
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .howmade-section-links:not(:last-child) {
+    margin-bottom: 38px;
+  }
+  .howmade-section .desc {
+    margin-bottom: 17px;
+  }
+  .picture {
+    max-width: 280px;
+  }
+
+  .howmade-section-btn,
+  .picture {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .howmade-section {
+    background-image: url('../images/milkm.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    }
+}
+
+@media screen and (min-width: 772px) {
+  .howmade-section .title,
+  .howmade-section-item {
+    font-size: 48px;
+    line-height: 1.146;
+    color: $title-color;
+  }
+
+  .howmade-section .subtitle {
+    font-size: 26px;
+    line-height: 1.154;
+  }
+
+  .howmade-section {
+    padding-top: 130px;
+    padding-bottom: 140px;
+  }
+
+  .howmade-section-content {
+    // width: 770px;
+    margin: auto;
+  }
+
+  .desc {
+    margin-bottom: 17px;
+  }
+  .desc.more {
+    width: 180px;
+  }
+  .howmade-section-btn {
+    margin-bottom: 66px;
+  }
+
+  .container {
+    padding-right: 36px;
+    padding-left: 36px;
+  }
+
+  .howmade-section-list {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .howmade-section-links:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  .howmade-section-content {
+    display: flex;
+    // width:100%;
+  }
+  .text,
+  .picture {
+    width: 50%;
+  }
+  .cow {
+    max-width: 340px;
+    padding-right: 17px;
+  }
+
+  .title {
+    margin-bottom: 50px;
+  }
+  .more {
+    margin-bottom: 62px;
+  }
+  .howmade-section-links {
+    width: 180px;
+  }
+
+}
+
+@media screen and (min-width: 1280px) {
+  .howmade-section .title,
+  .howmade-section-item {
+    font-size: 58px;
+    line-height: 1.138;
+  }
+
+  .howmade-section {
+    padding-top: 125px;
+    padding-bottom: 139px;
+  }
+
+  .container {
+    padding-right: 115px;
+    padding-left: 115px;
+  }
+
+  .cow {
+    max-width: 516px;
+    padding-right: 74px;
+  }
+  .howmade-section-links {
+    width: 330px;
+  }
+  .discription-b {
+    padding-right: 100px;
+  }
+
+  .howmade-section {
+    background-image: url('../images/milkm.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    }
+}
+
+>>>>>>> Stashed changes
